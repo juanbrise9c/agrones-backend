@@ -1,0 +1,19 @@
+{
+  "name": "inventario",
+  "plural": "inventarios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "AppUserId": {
+      "type": "any",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

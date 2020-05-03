@@ -1,0 +1,23 @@
+{
+  "name": "cosecha",
+  "plural": "cosechas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cultivoId": {
+      "type": "any",
+      "required": true
+    },
+    "bitacoraId": {
+      "type": "any",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

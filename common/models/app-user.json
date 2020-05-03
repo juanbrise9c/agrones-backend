@@ -1,0 +1,35 @@
+{
+  "name": "AppUser",
+  "plural": "AppUsers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombres": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_pat": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_mat": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "number",
+      "required": true
+    },
+    "isAdministrador": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
