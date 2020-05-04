@@ -1,0 +1,40 @@
+{
+  "name": "bitacora",
+  "plural": "bitacoras",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cosechaId": {
+      "type": "any",
+      "required": true
+    },
+    "perdidas": {
+      "type": "string"
+    },
+    "plagas": {
+      "type": "string"
+    },
+    "crecimiento": {
+      "type": "string"
+    },
+    "mano_obra": {
+      "type": "string"
+    },
+    "clima": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cosecha": {
+      "type": "belongsTo",
+      "model": "cosecha",
+      "foreignKey": "cosechaId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

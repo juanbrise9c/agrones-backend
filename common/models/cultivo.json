@@ -1,0 +1,46 @@
+{
+  "name": "cultivo",
+  "plural": "cultivos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cosechaId": {
+      "type": "any",
+      "required": true
+    },
+    "tipo_cultivo": {
+      "type": "string",
+      "required": true
+    },
+    "temporada": {
+      "type": "string",
+      "required": true
+    },
+    "hectareas": {
+      "type": "number",
+      "required": true
+    },
+    "costo_inicial": {
+      "type": "number",
+      "required": true
+    },
+    "fecha_siembra": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cosecha": {
+      "type": "belongsTo",
+      "model": "cosecha",
+      "foreignKey": "cosechaId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

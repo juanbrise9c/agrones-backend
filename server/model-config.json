@@ -46,5 +46,17 @@
   "cosecha": {
     "dataSource": "db",
     "public": true
+  },
+  "cultivo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "bitacora": {
+    "dataSource": "db",
+    "public": true
+  },
+  "producto": {
+    "dataSource": "db",
+    "public": true
   }
 }

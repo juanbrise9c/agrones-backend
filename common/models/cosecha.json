@@ -7,17 +7,28 @@
     "validateUpsert": true
   },
   "properties": {
-    "cultivoId": {
+    "AppUserId": {
       "type": "any",
       "required": true
     },
-    "bitacoraId": {
-      "type": "any",
+    "fecha_siembra": {
+      "type": "date",
       "required": true
+    },
+    "comentarios": {
+      "type": "string",
+      "required": false,
+      "default": "N/A"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "AppUser": {
+      "type": "belongsTo",
+      "model": "AppUser",
+      "foreignKey": "AppUserId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

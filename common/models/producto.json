@@ -1,31 +1,35 @@
 {
-  "name": "inventario",
-  "plural": "inventarios",
+  "name": "producto",
+  "plural": "productos",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "AppUserId": {
-      "type": "any",
-      "required": true
-    },
-    "name": {
+    "nombre": {
       "type": "string",
       "required": true
     },
-    "capacidad": {
+    "inventarioId": {
+      "type": "any",
+      "required": true
+    },
+    "precio": {
+      "type": "number",
+      "required": true
+    },
+    "cantidad": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "AppUser": {
+    "inventario": {
       "type": "belongsTo",
       "model": "AppUser",
-      "foreignKey": "AppUserId"
+      "foreignKey": "inventarioId"
     }
   },
   "acls": [],
