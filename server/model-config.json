@@ -58,5 +58,13 @@
   "producto": {
     "dataSource": "db",
     "public": true
+  },
+  "Container": {
+    "dataSource": "localFile",
+    "public": true
+  },
+  "Movimiento": {
+    "dataSource": "db",
+    "public": true
   }
 }

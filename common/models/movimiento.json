@@ -1,0 +1,46 @@
+{
+  "name": "Movimiento",
+  "plural": "Movimientos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "productoId": {
+      "type": "any",
+      "required": true
+    },
+    "appUserId": {
+      "type": "any",
+      "required": true
+    },
+    "tipo": {
+      "type": "number",
+      "required": true
+    },
+    "cantidad": {
+      "type": "number",
+      "required": true
+    },
+    "createdAt": {
+      "type": "date",
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "producto": {
+      "type": "belongsTo",
+      "model": "Producto",
+      "foreignKey": "productoId"
+    },
+    "appUser": {
+      "type": "belongsTo",
+      "model": "AppUser",
+      "foreignKey": "appUserId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
