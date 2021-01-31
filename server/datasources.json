@@ -1,6 +1,6 @@
 {
   "db": {
-    "database": "agrones",
+    "database": "testAgrones",
     "name": "db",
     "connector": "mongodb"
   },
