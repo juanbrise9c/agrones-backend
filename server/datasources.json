@@ -4,13 +4,6 @@
     "name": "db",
     "connector": "mongodb"
   },
-  "localFile": {
-    "name": "localFile",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "../containers",
-    "maxFileSize": "200112300"
-  },
   "Sandbox": {
     "host": "sandbox.xdme0.mongodb.net",
     "port": 0,
