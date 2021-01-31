@@ -10,5 +10,16 @@
     "provider": "filesystem",
     "root": "../containers",
     "maxFileSize": "200112300"
+  },
+  "Sandbox": {
+    "host": "sandbox.xdme0.mongodb.net",
+    "port": 0,
+    "url": "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.xdme0.mongodb.net/testAgrones?retryWrites=true&w=majority",
+    "database": "testAgrones",
+    "password": "m001-mongodb-basics",
+    "name": "Sandbox",
+    "user": "m001-student",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
   }
 }
