@@ -14,53 +14,53 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "AppUser": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "inventario": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "cosecha": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "cultivo": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "bitacora": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "producto": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "Movimiento": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   }
 }
